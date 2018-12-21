@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Card, CardImg, Col, CardText, CardTitle, CardSubtitle, Form, FormGroup, Label, Input } from 'reactstrap';
 
-const portraitStyle = {
-  width: '64px'
-};
+import './Unicorn.css';
 
 export default class Unicorn extends Component {
   constructor(props) {
@@ -42,24 +40,31 @@ export default class Unicorn extends Component {
 
   render() {
     return (
-      <Card>
-        <CardImg top style={portraitStyle} src={this.state.unicorn.photo} />
+      <Card className="unicorn-card">
+        <CardImg top src={this.state.unicorn.photo} />
         <CardTitle>Name: {this.state.unicorn.name} </CardTitle>
-
+        <CardText>Food: {this.state.unicorn.food}</CardText>
+        <CardText>Location: {this.state.unicorn.location}</CardText>
         <Form>
-          <FormGroup>
-            <CardText>Location: {this.state.unicorn.location}</CardText>
-            <Label for="updateLocation">Update</Label>
-            <Input name="updateLocation" type="select" value={this.state.unicorn.location} onChange={this.handleUpdate}>
-              <option value="Barn">Barn</option>
-              <option value="Windmill">Windmill</option>
-              <option value="Infirmary">Infirmary</option>
-              <option value="Pasture">Pasture</option>
-            </Input>
+          <FormGroup row>
+            <Label for="updateLocation" sm={4}>
+              Update
+            </Label>
+            <Col sm={6}>
+              <Input
+                name="updateLocation"
+                type="select"
+                value={this.state.unicorn.location}
+                onChange={this.handleUpdate}>
+                <option value="Barn">Barn</option>
+                <option value="Windmill">Windmill</option>
+                <option value="Infirmary">Infirmary</option>
+                <option value="Pasture">Pasture</option>
+              </Input>
+            </Col>
           </FormGroup>
         </Form>
         <CardSubtitle>Time: {this.state.unicorn.time} </CardSubtitle>
-        <CardBody>Food: {this.state.unicorn.food}</CardBody>
       </Card>
     );
   }

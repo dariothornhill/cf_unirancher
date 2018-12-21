@@ -30,15 +30,11 @@ export default class UnicornList extends Component {
     // Check if we have no unicorns then ...
     return this.state.unicorns.length > 0 ? (
       // Show a list of unicorns
-      <ul>
+      <div id="unicorns">
         {this.state.unicorns.map(u => {
-          return (
-            <li key={u.id}>
-              <Unicorn unicorn={u} />
-            </li>
-          );
+          return <Unicorn unicorn={u} key={u.id} />;
         })}
-      </ul>
+      </div>
     ) : (
       // Show a notice explaining that they are no unicorns
       <p>Looks like you don't have any unicorns!</p>
