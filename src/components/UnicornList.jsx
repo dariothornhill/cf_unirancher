@@ -4,37 +4,32 @@ import Unicorn from './Unicorn';
 export default class UnicornList extends Component {
   constructor(props) {
     super(props);
+    //Add an empty array for storing our unicorns
     this.state = {
-      unicorns: [
-        {
-          id: 1,
-          name: 'sparkly2',
-          food: 'apples',
-          photo: 'http://',
-          location: 'Barn'
-        }
-      ]
+      unicorns: []
     };
   }
 
-  ComponentDidMount() {
-    console.log('wm');
-    fetch('http://localhost:8000/unicorns', {
-      mode: 'cors',
-      headers: {
-        'Access-Control-Allow-Origin': '*'
-      }
-    })
-      .then(data => {
-        // TODO add error handling here
-        console.log(data);
+  componentDidMount() {
+    // fetch our list of unicorns
+    const options = {
+      // mode: 'cors' // cross origin
+    };
+
+    fetch('http://localhost:8000/unicorns', options)
+      .then(async response => {
+        const data = await response.json();
         this.setState({ unicorns: data });
       })
-      .catch(console.log);
+      .catch(error => {
+        console.log({ error });
+      });
   }
 
   render() {
-    return (
+    // Check if we have no unicorns then ...
+    return this.state.unicorns.length > 0 ? (
+      // Show a list of unicorns
       <ul>
         {this.state.unicorns.map(u => {
           return (
@@ -44,6 +39,9 @@ export default class UnicornList extends Component {
           );
         })}
       </ul>
+    ) : (
+      // Show a notice explaining that they are no unicorns
+      <p>Looks like you don't have any unicorns!</p>
     );
   }
 }
