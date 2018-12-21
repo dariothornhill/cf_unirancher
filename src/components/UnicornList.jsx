@@ -33,8 +33,8 @@ export default class UnicornList extends Component {
       <ul>
         {this.state.unicorns.map(u => {
           return (
-            <li>
-              <Unicorn unicorn={u} key={u.id} />
+            <li key={u.id}>
+              <Unicorn unicorn={u} />
             </li>
           );
         })}

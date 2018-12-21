@@ -1,0 +1,20 @@
+{
+  "unicorns": [
+    {
+      "id": 1,
+      "name": "Sparkly",
+      "food": "apples",
+      "photo": "images/sparkles.jpg",
+      "location": "Infirmary",
+      "time": "2018-12-21T18:21:03.355Z"
+    },
+    {
+      "id": 2,
+      "name": "Thunder",
+      "food": "golden apples",
+      "photo": "images/thunder.jpg",
+      "location": "Barn",
+      "time": "2018-12-21T18:21:11.690Z"
+    }
+  ]
+}
