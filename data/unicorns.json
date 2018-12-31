@@ -15,6 +15,54 @@
       "photo": "images/thunder.jpg",
       "location": "Barn",
       "time": "2018-12-21T18:21:11.690Z"
+    },
+    {
+      "id": 3,
+      "name": "Stardust",
+      "food": "Sugar",
+      "photo": "images/stardust.jpg",
+      "location": "Ranch",
+      "time": "2018-12-21T18:21:03.355Z"
+    },
+    {
+      "id": 4,
+      "name": "Pinky",
+      "food": "Strawberries",
+      "photo": "images/pinky.jpg",
+      "location": "Barn",
+      "time": "2018-12-21T18:21:11.690Z"
+    },
+    {
+      "id": 5,
+      "name": "Rainbow",
+      "food": "Candy",
+      "photo": "images/rainbow.jpg",
+      "location": "Infirmary",
+      "time": "2018-12-21T18:21:03.355Z"
+    },
+    {
+      "id": 6,
+      "name": "Umbra",
+      "food": "grapes",
+      "photo": "images/umbra.jpg",
+      "location": "Barn",
+      "time": "2018-12-21T18:21:11.690Z"
+    },
+    {
+      "id": 7,
+      "name": "Snowflake",
+      "food": "Ice Cream",
+      "photo": "images/snowflake.jpg",
+      "location": "Infirmary",
+      "time": "2018-12-21T18:21:03.355Z"
+    },
+    {
+      "id": 8,
+      "name": "Ember",
+      "food": "Peppers",
+      "photo": "images/ember.jpg",
+      "location": "Barn",
+      "time": "2018-12-21T18:21:11.690Z"
     }
   ]
 }
