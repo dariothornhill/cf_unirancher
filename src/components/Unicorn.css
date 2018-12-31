@@ -1,7 +1,16 @@
 .unicorn-card {
-  width: 18rem;
   text-align: left;
   padding: 0px;
   margin: 10px;
   border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+.unicorn-photo {
+  padding: 5px;
+  border-width: 5px 5px 10px 5px;
+  border-color: darkmagenta;
+  border-style: solid;
+  height: 180px;
 }

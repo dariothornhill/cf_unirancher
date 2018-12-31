@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Row} from 'reactstrap';
+
 import Unicorn from './Unicorn';
 
 export default class UnicornList extends Component {
@@ -30,11 +32,11 @@ export default class UnicornList extends Component {
     // Check if we have no unicorns then ...
     return this.state.unicorns.length > 0 ? (
       // Show a list of unicorns
-      <div id="unicorns">
+      <Row id="unicorns">
         {this.state.unicorns.map(u => {
           return <Unicorn unicorn={u} key={u.id} />;
         })}
-      </div>
+      </Row>
     ) : (
       // Show a notice explaining that they are no unicorns
       <p>Looks like you don't have any unicorns!</p>
