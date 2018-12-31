@@ -3,34 +3,34 @@
     {
       "id": 1,
       "name": "Sparkly",
-      "food": "apples",
+      "food": "Apples",
       "photo": "images/sparkles.jpg",
-      "location": "Infirmary",
-      "time": "2018-12-21T18:21:03.355Z"
+      "location": "Windmill",
+      "time": "2018-12-31T05:11:30.069Z"
     },
     {
       "id": 2,
       "name": "Thunder",
-      "food": "golden apples",
+      "food": "Golden apples",
       "photo": "images/thunder.jpg",
-      "location": "Barn",
-      "time": "2018-12-21T18:21:11.690Z"
+      "location": "Pasture",
+      "time": "2018-12-31T05:11:37.393Z"
     },
     {
       "id": 3,
       "name": "Stardust",
       "food": "Sugar",
       "photo": "images/stardust.jpg",
-      "location": "Ranch",
-      "time": "2018-12-21T18:21:03.355Z"
+      "location": "Infirmary",
+      "time": "2018-12-31T05:11:51.835Z"
     },
     {
       "id": 4,
       "name": "Pinky",
       "food": "Strawberries",
       "photo": "images/pinky.jpg",
-      "location": "Barn",
-      "time": "2018-12-21T18:21:11.690Z"
+      "location": "Pasture",
+      "time": "2018-12-31T05:11:43.757Z"
     },
     {
       "id": 5,
@@ -43,24 +43,24 @@
     {
       "id": 6,
       "name": "Umbra",
-      "food": "grapes",
+      "food": "Grapes",
       "photo": "images/umbra.jpg",
-      "location": "Barn",
-      "time": "2018-12-21T18:21:11.690Z"
+      "location": "Windmill",
+      "time": "2018-12-31T05:12:05.192Z"
     },
     {
       "id": 7,
       "name": "Snowflake",
       "food": "Ice Cream",
-      "photo": "images/snowflake.jpg",
+      "photo": "images/snowflake.png",
       "location": "Infirmary",
-      "time": "2018-12-21T18:21:03.355Z"
+      "time": "2018-12-31T05:11:48.752Z"
     },
     {
       "id": 8,
       "name": "Ember",
       "food": "Peppers",
-      "photo": "images/ember.jpg",
+      "photo": "images/ember.png",
       "location": "Barn",
       "time": "2018-12-21T18:21:11.690Z"
     }
